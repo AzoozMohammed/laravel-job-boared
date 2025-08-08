@@ -8,8 +8,10 @@ use View;
 
 class JobController extends Controller
 {
-    function index(){
+    function index()
+    {
         $jobs = Job::all();
-        return view('job/index' , ['job'=> $jobs, 'name' => 'Azooz']);//we basssed the data to the view from here
-    } 
+        return view('job/index', ['job' => $jobs, 'name' => 'Azooz']);//we basssed the data to the view from here
+    }
+
 }
